@@ -1,0 +1,20 @@
+<?php
+ $a=array(1,2,1,2,3,1);
+ $c=count($a);
+ $t=1;
+ for($i=0;$i<$c;$i++)
+ {
+     for($j=$i+1;$j<$c;$j++)
+     {
+        for($k=$j+1;$k<$c;$k++)
+        {
+         $t1=$a[$i]*$a[$j]*$a[$k];
+         if($t<$t1)
+         {
+            $t=$t1;
+         }
+     }
+ }
+}
+echo "product =$t";
+?>
